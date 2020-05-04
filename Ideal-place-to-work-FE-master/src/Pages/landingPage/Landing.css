@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto;
+}
+.flex-box {
+  display: flex;
+  width: 100%;
+}
+
+#react-paginate ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.user-profile-pic {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-left: 45px;
+  border: 1px solid black;
+}
+
+#react-paginate li {
+  display: inline-block;
+}
+
+.flex-row {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+/* LandingIndex Page */
+.cover-image-bg {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.73)),
+    url("../../images/shutterstock_610938071.jpg") no-repeat center;
+  background-size: cover;
+  height: 95vh;
+}
+
+.landing-page-title {
+  position: absolute;
+  top: 220px;
+  left: 90px;
+  z-index: 10;
+  filter: brightness(100%);
+  color: white;
+  font: bold 3rem Helvetica, Sans-Serif;
+  display: inline-flex;
+  font-size: 70px;
+}
+/* End LandingIndex Page */
+
+/* LandingSearch Component */
+.search-container {
+  position: absolute;
+  top: 90vh;
+  left: 50px;
+  border: 0px solid black;
+  z-index: 100;
+}
+.searchRow {
+  background-color: white;
+  position: absolute;
+  padding-top: 10px;
+  margin-bottom: 70px;
+  width: 587px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 9px 14px 2px rgba(0, 0, 0, 0.43);
+}
+.results-map {
+  visibility: hidden;
+  display: none;
+ z-index: -104;
+}
+
+.results-map-toggled {
+  visibility: visible;
+}
+
+.results-map > div,
+.results-map-toggled > div,
+.searchRow > div,
+.searchRow-toggled > div {
+  display: inline-block !important;
+}
+
+.searchRow-toggled {
+  transition: all 0.5s ease-in;
+  padding-top: 30px;
+  background-color: white;
+  position: absolute;
+  z-index: 130;
+  width: 587px;
+  height: 670px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 1px 5000px rgba(0, 0, 0, 0.8);
+}
+
+.searchIcon {
+  flex: 0 0 80px;
+  width: 90px;
+  padding-left: 40px;
+}
+.searchIcon-toggled {
+  flex: 0 0 80px;
+  width: 90px;
+  padding-left: 40px;
+  filter: saturate(0) opacity(0.5);
+}
+#searchInput {
+  margin-left: 25px;
+  text-align: left;
+  font-size: 25px;
+  width: 330px;
+  background-color: white !important;
+  border: 0px transparent;
+}
+
+#searchInput-toggled {
+  margin-left: 25px;
+  text-align: left;
+  font-size: 25px;
+  width: 330px;
+  background-color: white !important;
+  border: 0px transparent;
+  border-radius: 0px;
+  border-bottom: 2px solid gray;
+}
+
+.close-icon {
+  width: 110px;
+  padding: 0px;
+  position: relative;
+  top: -5px;
+}
+.map-div-search {
+  height: 70px;
+  width: 587px;
+  background-color: #efefef;
+  padding: 14px;
+}
+.map-div-search > h3 {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.recent-searches-div {
+  font-family: "Raleway", sans-serif;
+  padding: 30px 50px;
+}
+
+.map-icon {
+  width: 70px;
+  padding-left: 30px;
+}
+
+#searchInput:focus,
+#searchInput-toggled:focus {
+  box-shadow: none;
+  outline: 0 none;
+  background-color: white !important;
+}
+
+.form-control:active {
+  border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: white;
+  outline: none;
+}
+
+.search-input-text {
+  flex-grow: 1;
+}
+#closeIcon {
+  height: 45px;
+  right: 0;
+  position: absolute;
+  margin-right: 20px;
+}
+/* End LandingSearch Component */
+
+/* LandingSearchModal */
+#closeBtnImg {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  margin-right: 15px;
+  right: 0;
+}
+#geoLinkImg {
+  max-width: 100%;
+  height: 35px;
+  margin-left: 15px;
+}
+/* End LandingSearchModal */
+
+/* landingAPI Component */
+
+.near-you-filter-landing-page {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.landing-input {
+  width: 150px !important;
+  border: 0px !important;
+  background-color: rgb(192, 211, 222) !important;
+}
+.div-select-city{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  align-items: flex-end;
+}
+.select-city-landing-page{
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.near-your-filter-div {
+  margin-top: 100px;
+}
+#filterBy {
+  color: #b40aee;
+  visibility: visible;
+  padding-right: 20px;
+  float: right;
+}
+
+h3#filterBy:hover {
+  visibility: visible;
+  color: rgb(88, 3, 116);
+}
+
+.places-Col {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+.card-taxt-container {
+  padding: 10px 0px !important;
+  color: black;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.div-with-filtering-options {
+  /* transition: all 1s ease-out; */
+  visibility: hidden;
+  position: absolute;
+  right: 45px;
+  background-color: white;
+  width: 200px;
+  border-radius: 40px;
+  height: 0px;
+  box-shadow: 0px 0px 1px 5000px rgba(0, 0, 0, 0.8);
+}
+.div-with-filtering-options-toggled {
+  /* float: right; */
+  transition: all 0.4s ease-in;
+  display: inline-block;
+  position: absolute;
+  right: 45px;
+  background-color: white;
+  width: 600px;
+  border-radius: 40px;
+  height: 500px;
+  z-index: 100;
+  box-shadow: 0px 0px 1px 5000px rgba(0, 0, 0, 0.8);
+}
+.div-with-filtering-options-toggled .row {
+  margin: 80px 40px;
+}
+.rating-star-icon-landing-page {
+  width: 24px !important;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+
+.placeImgs {
+  height: 300px;
+  object-fit: cover;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 20px !important;
+}
+
+.placeImgs:hover {
+  -ms-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  transform: scale(1.1);
+  /*transform: scale(.9);*/
+}
+
+img.placeImgs:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.description-for-filters {
+  margin-top: 10px;
+  text-align: center;
+  width: 160px;
+}
+
+.description-for-filters h4 {
+  font-size: 30px;
+}
+.filter-descrp-bottom {
+  width: 600px;
+  color: rgb(84, 84, 84);
+  text-align: center;
+}
+.filter-descrp-bottom h3 {
+  font-size: 20px;
+}
+/* End landingAPI Component */
+
+/* landingFilterModal */
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.filterIcons {
+  width: 160px;
+}
+
+/* End landingFilterModal */
+
+/* fixed footer Component*/
+.footer-home {
+  display: flex;
+  -webkit-appearance: button;
+  padding: 3px 8px 3px 8px;
+  font-size: 13px;
+  position: relative;
+  cursor: context-menu;
+  align-items: center;
+}
+
+.footer-icons-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9200e6;
+}
+
+.footer-icon img {
+  width: 50px;
+  padding: 5px;
+}
+
+.footer-icon img:hover {
+  width: 50px;
+  padding: 5px;
+  opacity: 50%;
+}
+
+.footer-home {
+  border-radius: 50px;
+  border: 3px solid white;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.home-icon {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.h-lg {
+  height: 50em;
+}
+
+.footer-heart {
+  margin-left: 25px;
+}
+
+.footer-user {
+  margin-left: 90px;
+}
+
+.footer-icons-container a:hover {
+  text-decoration: none;
+}
+
+.footer-icon {
+  cursor: pointer;
+}
+
+.home-text {
+  padding-right: 5px;
+  padding-top: 10px;
+}
+
+/* .home-text:hover {
+  padding-right: 5px;
+  padding-top: 10px;
+  text-decoration: none;
+} */
+
+/* End fixed footer Component*/
+
+.pagination > li {
+  z-index: 70;
+  display: inline-block;
+  padding-left: 0;
+}
+.pagination > li {
+  list-style: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #9200E6;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.pagination > li.active > a {
+  color: #fff;
+  background-color: #9200E6;
+  border-color: #9200E6;
+}
+
+.pagination > li > a:hover {
+  background-color: #9200E6;
+  color: white;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  padding: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  display: none !important;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  margin-right: 0;
+  padding: 0px !important;
+  border-top-right-radius: 4px;
+  display: none !important;
+}
+
+a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+.marker-map{
+    width: 25px;
+    height: 25px;
+    user-select: none;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 750px) {
+  .placeImgs {
+    height: 400px;
+    object-fit: cover;
+  }
+  .near-you-filter-landing-page {
+    font-size: 30px;
+  }
+  .searchIcon {
+    margin-left: 25px;
+    width: 40px;
+    padding: 0;
+  }
+  .searchRow {
+    width: 400px;
+    height: 80px;
+  }
+  #searchInput {
+    width: 300px;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .home-text {
+    font-size: 20px;
+  }
+  .footer-home {
+    height: 40px;
+    border: 2px solid white;
+  }
+  .footer-user {
+    margin-left: 30px;
+  }
+  .footer-icon img {
+    width: 30px;
+  }
+  .description-for-filters {
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+  }
+
+  .description-for-filters h4 {
+    font-size: 20px;
+  }
+  .filter-descrp-bottom {
+    width: 400px;
+  }
+  .filter-descrp-bottom h3 {
+    font-size: 10px;
+  }
+  .div-with-filtering-options-toggled {
+    transition: all 1.5s ease;
+    display: inline-block;
+    position: absolute;
+    right: 45px;
+    background-color: white;
+    width: 400px;
+    border-radius: 40px;
+    height: 340px;
+    z-index: 100;
+    box-shadow: 0px 0px 1px 5000px rgba(0, 0, 0, 0.8);
+  }
+  .filterIcons {
+    width: 100px;
+  }
+  .div-with-filtering-options-toggled .row {
+    margin: 50px 40px;
+  }
+}

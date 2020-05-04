@@ -1,0 +1,84 @@
+#plx-card {
+    padding: 10px;
+    background-color: #fcfff6;
+    box-shadow: 5px 5px 5px #9200E6;;
+    /*position: relative;*/
+}
+
+.animated:hover {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.user-review-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 1px 1px;
+}
+
+.user-review-username {
+    padding-top: 2px;
+    color: #262441;
+    font-weight: bold;
+}
+
+.user-review-text {
+    color: #262441;
+}
+
+.created-at {
+    color: #262441;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+.user-review-header-container {
+    margin-bottom: 30px;
+}
+
+.List {
+    border: 1px solid #d9dddd;
+}
+
+.ListItemEven,
+.ListItemOdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ListItemEven {
+    background-color: #f8f8f0;
+}
+

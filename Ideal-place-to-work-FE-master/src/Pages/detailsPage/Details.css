@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.d-block {
+    width: unset;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.location-close-icon {
+    position: absolute;
+    width: 125px;
+    right: 0;
+    margin: 50px 100px;
+    z-index: 1;
+}
+.location-pin-icon {
+    width: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.place-title {
+    font-weight: bolder !important;
+}
+
+h4 {
+    padding-top: 5px;
+    color: #9200e6 !important;
+    flex: 1;
+    font-weight: bold !important;
+}
+
+.row-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.click-to-like{
+    display: flex;
+    align-self: end;
+    color: #9200e6;
+    width: 50px;
+
+}
+
+.like-btn{
+    cursor: pointer;
+    width: 50px;
+    /* transform: rotate(180deg);
+    transition: all 0.75s 0.25s; */
+}
+
+.dislike-btn{
+    cursor: pointer;
+}
+
+
+h5{
+    padding-left: 25px;
+}
+
+h2 {
+    font-size: xx-large;
+    padding-bottom: 15px;
+}
+
+
+.rating-star-icon {
+    width: 50px;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+}
+
+.rate-place {
+    color: #9200e6;
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rate-place-alert {
+    color: rgb(60, 60, 60);
+    opacity: 30;
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: #b7adb4 2px solid;
+} */
+
+.container.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    border-bottom: #b7adb4 2px solid;
+    margin-bottom: 20px;
+}
+
+.rating-container {
+    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.row-details {
+    display: flex;
+    width: 100%;
+}
+
+.coffee-point {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1 1 auto;
+}
+
+.details-para {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.row-details-rate-place {
+    display: flex;
+    flex: 1 1 auto;
+    border-top: 2px solid #b7adb4;
+    border-bottom: 2px solid #b7adb4;
+    margin: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+.price-to-enter {
+    color: #9200e6;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.spacer {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.opening-hours {
+    margin-bottom: 20px;
+    flex-basis: 80%;
+    font-weight: bold;
+}
+.open-hours-text {
+    color: #9200e6;
+    font-weight: bold;
+}
+.web-site-link {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    cursor: pointer;
+    text-underline: #9200e6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:300px;
+}
+.web-site {
+    margin-top: 5px;
+    flex-basis: 20%;
+
+}
+
+.website-title {
+    font-weight: bold;
+}
+
+.graph-paragraph{
+    font-family: "Roboto", sans-serif;
+}
+
+.graph-header{
+    font-family: 'Poppins', sans-serif;
+    color: #8306BC;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.div-graphs {
+    border-top: 2px solid #b7adb4;
+    padding: 30px 0px;
+    border-bottom: 2px solid #b7adb4;
+}
+
+.user-review {
+    margin-top: 10px;
+}

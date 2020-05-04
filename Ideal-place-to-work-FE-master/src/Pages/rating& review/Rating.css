@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@700&display=swap');
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto;
+}
+
+.comment-icon-container {
+    display: flex;
+    flex: 1 1 auto;
+    width: 30px;
+}
+.coffee-icon {
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 18px;
+}
+
+.comfyPlace-icon {
+    width: 70px;
+}
+.wifi-icon {
+    width: 70px;
+}
+
+.modal-content {
+    border-radius: 30px !important;
+    background: #b7adb4 !important;
+}
+.star-rating-div {
+    border: #dae1d9 2px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.wifi-text {
+    margin-left: 15px;
+
+}
+
+/*review rating */
+
+.review-modal-open {
+    transition: all 0.5s ease-in;
+    width: 600px;
+    height: 800px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.9);
+    position: absolute;
+    align-self: center;
+    z-index: 100;
+    margin: auto;
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+.review-modal-close{
+    transition: all 1s ease-in;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+.modal-rev-header{
+    text-transform: uppercase;
+    color: #9200E6;
+    padding: 40px 0px 0px 50px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exit-icon-modal {
+    width: 90px;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+.rating-icon-modal{
+    width: 80px;
+    margin-left: 30px;
+}
+
+.form-container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-container > textarea {
+    padding: 10px;
+    background-color: rgb(196, 219, 238);
+    border: 0px solid white;
+    border-radius: 10px;
+    width: 500px;
+    height: 90px;
+    outline: none;
+}
+
+.form-container > textarea:active {
+    outline: none;
+    border: 0px solid white;
+}
